@@ -65,7 +65,7 @@ public class StringUtilsTest {
 
     @Test
     public void removeCharacterAtIndexTest() {
-        // Given
+       //  Given
         String inputString = "Jumping";
         Integer characterIndex = 2;
         String expected = "Juping";
@@ -74,7 +74,7 @@ public class StringUtilsTest {
         String actual = StringUtils.removeCharacterAtIndex(inputString, characterIndex);
 
         // Then
-        Assert.assertEquals(expected, actual);
+       Assert.assertEquals(expected, actual);
     }
 
 }
