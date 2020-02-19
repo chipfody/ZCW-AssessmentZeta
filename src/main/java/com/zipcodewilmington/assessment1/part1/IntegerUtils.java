@@ -17,6 +17,8 @@ public class IntegerUtils {
             intSum += i;
         }
         return intSum;
+
+        //
     }
 
     /**
@@ -40,14 +42,16 @@ public class IntegerUtils {
 
 
         String intString = Integer.toString(val);
-        System.out.println(intString);
         StringBuilder toReverse = new StringBuilder();
         toReverse.append(intString);
         toReverse = toReverse.reverse();
-        System.out.println(toReverse);
         String sb = toReverse.toString();
         Integer result = Integer.parseInt(sb);
 
         return result;
     }
+    // String s = Integer.toString(val);
+    // s = BasicStringUtils.reverse(s);
+    // return new Integer(s);
+    // NOTE: since we already defined "reverse" in the "BasicStringUtil" tab the prior section, we can call it here!!!!
 }

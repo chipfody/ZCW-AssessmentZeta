@@ -40,6 +40,7 @@ public class StringUtils {
         StringBuilder revFirst = new StringBuilder(firstWord).reverse();
         return revFirst.toString();
     }
+    //  return BasicStirgUtils.reverse(getFirstWord(sentence));
 
     /**
      * @param sentence a string containing words delimited by spaces, representative of a sentence
@@ -58,6 +59,7 @@ public class StringUtils {
 
         return String.copyValueOf(revCamFirst);
 }
+    // return BasicStringUtils.camelCase(reverseFirstWord(sentence));
 
 
 

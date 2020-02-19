@@ -22,6 +22,11 @@ public class ArrayUtils {
             }
 
         return counter;
+
+        // int n = 0;
+        //for (Object to : objectArray) {
+        //     if (to.equals(objectToCount)) n += 1;
+        //return n;
     }
 
     /**
@@ -48,8 +53,14 @@ public class ArrayUtils {
         }
 
         return newArray;
-
     }
+
+    //  ArrayList<Object> temp = newArrayList();
+    //  for (Object to : objectArray) {
+    //       if (!to.equals(objectToRemove)) temp.add(to);
+    //  Integer[] foo = new Integer[temp.size()];
+    //
+    //   return temp.toArray(foo);
 
     /**
      * @param objectArray an array of any type of Object
@@ -78,6 +89,19 @@ public class ArrayUtils {
         return mostPop;
     }
 
+    //  int max = 0;
+    //  int occ = 0;
+    //  Object result = null;
+    //  for (Object to : objectArray) {
+    //       occ = getNumberOfOccurences(objectArray, to)
+    //   if (occ > max) {
+    //        max = occ;
+    //        result = to;
+    //       }
+    //     }
+    //      return result;
+    //  }
+
 
     /**
      * @param objectArray an array of any type of Object
@@ -105,6 +129,20 @@ public class ArrayUtils {
         }
         return leastPop;
     }
+    //  int min = 1;   [or int = Integer.MAX_VALUE;   or int min = objectArray.length;
+    //  int occ = 0;
+    //  Object result = null;
+    //  for (Object to : objectArray) {
+    //       occ = getNumberOfOccurrences(objectArray, to)
+    //   if (occ < min) {
+    //        min = occ;
+    //        result = to;
+    //       }
+    //     }
+    //      return result;
+    //  }
+
+
 
     /**
      * @param objectArray      an array of any type of Object
@@ -126,4 +164,8 @@ public class ArrayUtils {
        return newArray;
 
     }
+
+    //  ArrayList<Object> result = new ArrayList<>();
+    //  result.addAll(objectArray);
+    // see snapshot
 }

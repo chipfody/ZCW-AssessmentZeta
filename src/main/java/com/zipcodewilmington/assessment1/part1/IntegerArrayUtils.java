@@ -16,6 +16,13 @@ public class IntegerArrayUtils {
             intSum += intArray[i];
         }
         return intSum;
+
+        //  Integer s = 0;
+        //  for( Integer i : intArray) s += i;
+        //  return s;
+
+        // NOTE: here the += should not be intArray[i] b/c it will be looking for the index but the contents so you would
+        // get an "out of bounds exception"
     }
 
     /**
@@ -31,6 +38,10 @@ public class IntegerArrayUtils {
             intProduct *= intArray[i];
         }
         return intProduct;
+
+        //  Integer p = 1;
+        //  for (Integer i : inArray p *= intArray[i];
+        //  return p;
     }
 
     /**
@@ -46,5 +57,7 @@ public class IntegerArrayUtils {
             intSum += intArray[i];
         }
         return intSum / index;
+
+        //  return Double.valueOf()(getSum(intArray)/intArray.length);
     }
 }

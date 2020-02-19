@@ -16,7 +16,7 @@ public class MultiplesDeleter {
         Integer index2 = 0;
         for (int i = 0; i < ints.length; i++) {
             if (ints[i] % 2 == 0) {
-                ints[i] = -1;
+                ints[i] = -1;   // should have used 0 b/c it is neither even nor odd
                 index++;
             }
         }
@@ -29,6 +29,10 @@ public class MultiplesDeleter {
        }
         return newArray;
     }
+    //
+    //
+    //
+    //
 
     /**
      * @param ints array of Integer objects
@@ -40,7 +44,7 @@ public class MultiplesDeleter {
         Integer index = 0;
         Integer index2 = 0;
         for (int i = 0; i < ints.length; i++) {
-            if (ints[i] % 2 != 0) {
+            if (ints[i] % 2 != 0) {                      // sho
                 ints[i] = -1;
                 index++;
             }

@@ -29,6 +29,15 @@ public class BasicStringUtils {
         revString.append(str);
 
         return revString.reverse().toString();
+
+        //return new StringBuilder(str).reverse().toString();
+        //or
+        //String newStr = "";
+        //for (int  i = str.length() - 1; i >=0; i--); {
+        //  newStr = newStr + str.charAt(i);
+        //  return newStr;
+
+
     }
 
     /**
@@ -46,6 +55,9 @@ public class BasicStringUtils {
         reverseCamel.append(newWord).reverse();
         return reverseCamel.toString();
 
+        // or...
+        // camelCase(reverse(str));
+
 
         // return ;
     }
@@ -59,6 +71,8 @@ public class BasicStringUtils {
 
         Integer index = str.length();
         return str.substring(1, index - 1);
+
+        // or return str.substring(1, str.length() - 1;
     }
 
     /**
@@ -77,6 +91,10 @@ public class BasicStringUtils {
                     }
                 }
         return String.valueOf(newString);
+                // or return new String(newString);
+
+        // should make second "if else" statement b/c the character could be white space or punctuation
+        // the upper code would fails if one of these was hit on.
     }
 
 }
