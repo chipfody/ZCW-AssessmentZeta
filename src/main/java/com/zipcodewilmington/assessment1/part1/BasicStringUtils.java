@@ -1,7 +1,5 @@
 package com.zipcodewilmington.assessment1.part1;
 
-import java.util.ArrayList;
-
 /**
  * Created by leon on 2/16/18.
  */
@@ -25,19 +23,7 @@ public class BasicStringUtils {
      */
     public static String reverse(String str) {
 
-        StringBuilder revString = new StringBuilder();
-        revString.append(str);
-
-        return revString.reverse().toString();
-
-        //return new StringBuilder(str).reverse().toString();
-        //or
-        //String newStr = "";
-        //for (int  i = str.length() - 1; i >=0; i--); {
-        //  newStr = newStr + str.charAt(i);
-        //  return newStr;
-
-
+        return new StringBuilder(str).reverse().toString();
     }
 
     /**
@@ -46,20 +32,7 @@ public class BasicStringUtils {
      */
     public static String reverseThenCamelCase(String str) {
 
-        Integer strLength = str.length();
-        char[] revCamelArray = str.toCharArray();
-        revCamelArray[strLength - 1] = Character.toUpperCase(revCamelArray[strLength - 1]);
-        String newWord = String.valueOf(revCamelArray);
-
-        StringBuilder reverseCamel = new StringBuilder();
-        reverseCamel.append(newWord).reverse();
-        return reverseCamel.toString();
-
-        // or...
-        // camelCase(reverse(str));
-
-
-        // return ;
+         return camelCase(reverse(str));
     }
 
 
@@ -69,10 +42,7 @@ public class BasicStringUtils {
      */
     public static String removeFirstAndLastCharacter(String str) {
 
-        Integer index = str.length();
-        return str.substring(1, index - 1);
-
-        // or return str.substring(1, str.length() - 1;
+         return str.substring(1, str.length() - 1);
     }
 
     /**
@@ -91,7 +61,6 @@ public class BasicStringUtils {
                     }
                 }
         return String.valueOf(newString);
-                // or return new String(newString);
 
         // should make second "if else" statement b/c the character could be white space or punctuation
         // the upper code would fails if one of these was hit on.

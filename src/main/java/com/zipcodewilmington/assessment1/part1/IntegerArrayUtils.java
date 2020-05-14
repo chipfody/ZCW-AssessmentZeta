@@ -10,19 +10,10 @@ public class IntegerArrayUtils {
      */
     public static Integer getSum(Integer[] intArray) {
 
-        Integer index = intArray.length;
-        Integer intSum = 0;
-        for (int i = 0; i < index; i++) {
-            intSum += intArray[i];
-        }
-        return intSum;
-
-        //  Integer s = 0;
-        //  for( Integer i : intArray) s += i;
-        //  return s;
-
-        // NOTE: here the += should not be intArray[i] b/c it will be looking for the index but the contents so you would
-        // get an "out of bounds exception"
+          Integer sum = 0;
+          for( Integer i : intArray)
+              sum += i;
+          return sum;
     }
 
     /**
@@ -31,17 +22,10 @@ public class IntegerArrayUtils {
      */
     public static Integer getProduct(Integer[] intArray) {
 
-
-        Integer index = intArray.length;
-        Integer intProduct = 1;
-        for (int i = 0; i < index; i++) {
-            intProduct *= intArray[i];
-        }
-        return intProduct;
-
-        //  Integer p = 1;
-        //  for (Integer i : inArray p *= intArray[i];
-        //  return p;
+          Integer product = 1;
+          for (Integer i : intArray)
+              product *= i;
+          return product;
     }
 
     /**
@@ -50,14 +34,6 @@ public class IntegerArrayUtils {
      */
     public static Double getAverage(Integer[] intArray) {
 
-        Integer index = intArray.length;
-        Double intSum = 0.0;
-        Double intAverage = 0.0;
-        for (int i = 0; i < index; i++) {
-            intSum += intArray[i];
-        }
-        return intSum / index;
-
-        //  return Double.valueOf()(getSum(intArray)/intArray.length);
+          return (double) (getSum ( intArray ) / intArray.length);
     }
 }

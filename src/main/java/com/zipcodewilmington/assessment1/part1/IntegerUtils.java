@@ -17,8 +17,6 @@ public class IntegerUtils {
             intSum += i;
         }
         return intSum;
-
-        //
     }
 
     /**
@@ -40,18 +38,10 @@ public class IntegerUtils {
      */
     public static Integer reverseDigits(Integer val) {
 
+        String s = Integer.toString ( val );
+        s = BasicStringUtils.reverse ( s );
+        return Integer.valueOf ( s );
 
-        String intString = Integer.toString(val);
-        StringBuilder toReverse = new StringBuilder();
-        toReverse.append(intString);
-        toReverse = toReverse.reverse();
-        String sb = toReverse.toString();
-        Integer result = Integer.parseInt(sb);
-
-        return result;
+        // NOTE: since we already defined "reverse" in the "BasicStringUtil" tab the prior section, we can call it here!!!!
     }
-    // String s = Integer.toString(val);
-    // s = BasicStringUtils.reverse(s);
-    // return new Integer(s);
-    // NOTE: since we already defined "reverse" in the "BasicStringUtil" tab the prior section, we can call it here!!!!
 }
